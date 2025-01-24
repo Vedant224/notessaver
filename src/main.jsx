@@ -13,7 +13,7 @@ createRoot(document.getElementById("root")).render(
       <ThemeProvider>
         <div className="min-h-screen w-screen overflow-hidden">
           <App />
-          <Toaster position="top-right"/>
+          <Toaster position="top-center"/>
         </div>
       </ThemeProvider>
     </Provider>
