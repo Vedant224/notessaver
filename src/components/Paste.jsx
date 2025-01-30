@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 import { removeFromPastes } from "../redux/pasteSlice";
 import { FormatDate } from "../utlis/formatDate";
+import { Link } from "react-router-dom";
 
 const Paste = () => {
   const pastes = useSelector((state) => state.paste.pastes);
@@ -70,14 +71,13 @@ const Paste = () => {
                           size={20}
                         />
                       </button>
-                      <button className="p-2 rounded-[0.2rem] bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 hover:bg-transparent group hover:border-orange-500">
-                        <a href={`/pastes/${paste?._id}`} target="_blank">
-                          <Eye
-                            className="text-gray-600 dark:text-gray-400 group-hover:text-orange-500"
-                            size={20}
-                          />
-                        </a>
-                      </button>
+                      <Link to={`/pastes/${paste?._id}`} className="group">
+                        <button
+                          className="p-2 rounded-[0.2rem] bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 hover:bg-transparent group-hover:border-orange-500"
+                        >
+                          <Eye className="text-gray-600 dark:text-gray-400 group-hover:text-orange-500" size={20} />
+                        </button>
+                      </Link>
                       <button
                         className="p-2 rounded-[0.2rem] bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 hover:bg-transparent group hover:border-green-500"
                         onClick={() => {
