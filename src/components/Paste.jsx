@@ -55,12 +55,12 @@ const Paste = () => {
                   <div className="flex flex-col gap-y-4 sm:items-end">
                     <div className="flex gap-2 flex-wrap sm:flex-nowrap">
                       <button className="p-2 rounded-[0.2rem] bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 hover:bg-transparent group hover:border-blue-500">
-                        <a href={`/?pasteId=${paste?._id}`}>
+                        <Link to={`/?pasteId=${paste?._id}`} className="group">
                           <PencilLine
                             className="text-gray-600 dark:text-gray-400 group-hover:text-blue-500"
                             size={20}
                           />
-                        </a>
+                        </Link>
                       </button>
                       <button
                         className="p-2 rounded-[0.2rem] bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 hover:bg-transparent group hover:border-pink-500"
