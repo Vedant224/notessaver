@@ -20,7 +20,7 @@ Follow these steps to set up NoteSaver on your local machine:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/notessaver.git
+git clone https://github.com/Vedant224/notessaver.git
 cd notessaver
 
 # Install dependencies
