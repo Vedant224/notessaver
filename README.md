@@ -1,4 +1,4 @@
-# NoteSaver
+# NotesSaver
 
 NoteSaver is a simple note-taking application built with React and Tailwind CSS. It allows users to create, view, edit, copy, and delete notes. The application uses LocalStorage to persist notes.
 
@@ -20,8 +20,8 @@ Follow these steps to set up NoteSaver on your local machine:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/notesaver.git
-cd notesaver
+git clone https://github.com/your-username/notessaver.git
+cd notessaver
 
 # Install dependencies
 npm install
